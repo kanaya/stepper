@@ -45,10 +45,10 @@ void L6470_setup() {
   L6470_setparam_maxspeed(0x40); //[R, WR]最大速度default 0x041 (10bit) (15.25*val+15.25[step/s])
   L6470_setparam_minspeed(0x01); //[R, WS]最小速度default 0x000 (1+12bit) (0.238*val[step/s])
   L6470_setparam_fsspd(0x3ff); //[R, WR]μステップからフルステップへの切替点速度default 0x027 (10bit) (15.25*val+7.63[step/s])
-  L6470_setparam_kvalhold(0x50); //[R, WR]停止時励磁電圧default 0x29 (8bit) (Vs[V]*val/256)
-  L6470_setparam_kvalrun(0x50); //[R, WR]定速回転時励磁電圧default 0x29 (8bit) (Vs[V]*val/256)
-  L6470_setparam_kvalacc(0x50); //[R, WR]加速時励磁電圧default 0x29 (8bit) (Vs[V]*val/256)
-  L6470_setparam_kvaldec(0x50); //[R, WR]減速時励磁電圧default 0x29 (8bit) (Vs[V]*val/256)
+  L6470_setparam_kvalhold(142); //[R, WR]停止時励磁電圧default 0x29 (8bit) (Vs[V]*val/256)
+  L6470_setparam_kvalrun(142); //[R, WR]定速回転時励磁電圧default 0x29 (8bit) (Vs[V]*val/256)
+  L6470_setparam_kvalacc(142); //[R, WR]加速時励磁電圧default 0x29 (8bit) (Vs[V]*val/256)
+  L6470_setparam_kvaldec(142); //[R, WR]減速時励磁電圧default 0x29 (8bit) (Vs[V]*val/256)
 
   L6470_setparam_stepmood(0x03); //ステップモードdefault 0x07 (1+3+1+3bit)
 }
