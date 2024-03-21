@@ -2,10 +2,10 @@
 #include <MsTimer2.h>
 
 // ピン定義。
-#define PIN_SPI_MOSI 11
-#define PIN_SPI_MISO 12
-#define PIN_SPI_SCK 13
-#define PIN_SPI_SS 10
+#define PIN_SPI_MOSI MOSI
+#define PIN_SPI_MISO MISO
+#define PIN_SPI_SCK SCK
+#define PIN_SPI_SS SS
 #define PIN_BUSY 9
 
 void setup()
